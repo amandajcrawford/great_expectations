@@ -9,6 +9,7 @@ config = """
 name: my_checkpoint  # This is populated by the CLI.
 config_version: 1
 class_name: SimpleCheckpoint
+run_name_template: "%Y%m%d-%H%M%S-my-run-name-template" # (Optional) Update this value
 validations:
   - batch_request:
       datasource_name: my_datasource  # Update this value.
